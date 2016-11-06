@@ -1,0 +1,29 @@
+{
+  "name": "node-zmqserver",
+  "version": "0.1.0",
+  "description": "A simple ZMQ-based client/server with router implementation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidwu226/node-zmqserver.git"
+  },
+  "keywords": [
+    "zmq",
+    "client",
+    "server",
+    "router",
+    "networking"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidwu226/node-zmqserver/issues"
+  },
+  "homepage": "https://github.com/davidwu226/node-zmqserver#readme",
+  "dependencies": {
+    "zmq": "^2.15.3"
+  }
+}
