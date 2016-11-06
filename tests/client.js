@@ -1,5 +1,8 @@
 var zmqserver = require('../index');
-var client = new zmqserver.Client("client");
+var client = new zmqserver.Client("client", function(msg, done) {
+    msg.password = 'open';
+    done();
+});
 
 client.start("tcp://127.0.0.1:4000");
 
