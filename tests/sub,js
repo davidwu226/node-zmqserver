@@ -1,0 +1,12 @@
+var zmq = require('zmq');
+
+var sock = zmq.socket('sub');
+sock.connect("tcp://127.0.0.1:4000");
+sock.subscribe('AAPL');
+sock.subscribe('GOOG');
+sock.subscribe('YHOO');
+sock.subscribe('MSFT');
+
+sock.on('message', function(data) {
+    console.log("Got: "+data.toString());
+});
