@@ -1,5 +1,5 @@
 var zmqserver = require('../index');
-var router = new zmqserver.Router(function(msg, auth) {
+var router = new zmqserver.Router(function(sender_id, msg, auth) {
     if (msg.password == "open") {
         auth(true);
     } else {
