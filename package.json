@@ -1,6 +1,6 @@
 {
   "name": "node-zmqserver",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "A simple ZMQ-based client/server with router implementation.",
   "main": "index.js",
   "scripts": {
